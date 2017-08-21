@@ -81,7 +81,7 @@ Upload these 3 files to the [`editors`](editors/) folder.
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Vim will be my preferred terminal editor. I did the tutorials for both vim and emacs and found vim slightly easier to use; I didn't like that in emacs you have to press Ctrl for everything. I also like that vim is the default for most systems.
 
 --
 
@@ -89,6 +89,8 @@ What terminal editor will be your preferred choice of use? How did you make your
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I will use Spyder, at least for now. I used it for class I took, so I'm fairly comfortable with it, and I like that it's an IDE. Some cool features in the editor are using Tab to pull up suggestions and completions, and having warnings pop up in the line number area as you type. The IPython console is also useful to have. You can run your code using F5, and it also allows for inline charts. There is also a variable explorer window that lets you easily see what's in every variable. Some useful shortcuts are Command+Shift+E, I, or V to switch to the editor, IPython console, or variable explorer, respectively. Within the editor, shortcuts like copy, cut, and paste are standard Command+c, x, and v. Some others are Command+4 to enter a block comment, Command+L to go to a certain line, Ctrl+D to delete a whole line, Ctrl+e to go to the end of the line, and Ctrl+a to go to the beginning of the line. You can customize Spyder by opening up the Preferences window.
+
+Down the road I will probably try to using different editors, but for now I'm used to Spyder and don't want to overcomplicate things if I don't have to!
 
  
