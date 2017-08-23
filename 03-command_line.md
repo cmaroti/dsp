@@ -58,7 +58,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+* ls -d \*/ = displays only directories
+* ls -m = displays names as a comma-separated list
+* ls -r = displays files in reverse order
+* ls -R = displays subdirectories
+* ls -b = displays nonprinting characters in octal
 
 ---
 
@@ -66,7 +70,7 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+xargs lets you apply commands one or more times to input given through stdin. For example, to find .txt files using xargs, you would type xargs find . -name, then "\*.txt" on the next line, and then ^D.
 
  
 
