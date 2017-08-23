@@ -50,7 +50,7 @@ What do the following commands do:
 * ls -lh = long form but with file size in bytes, KB, MB, etc.
 * ls -lah = long form, includes hidden files, includes file size suffixes  
 * ls -t = lists files sorted by most recently modified
-* ls -Glp = long form, the 'p' inserts a slash after directory names, and the 'G' tells it not to print group names
+* ls -Glp = long form, the 'p' inserts a slash after directory names, and the 'G' colorizes the text
 
 ---
 
