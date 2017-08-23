@@ -27,6 +27,9 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 * mv [oldfile] [newfile] = renaming a file
 * ls -a = listing hidden files
 * cp [file] [directory] = copying a file from one directory to another
+* cat [filename] = stream contents of a file (also can use more)
+* pushd [directory] = saves your current place, then goes to the directory specified
+* popd = goes back to the last directory
 
 ---
 
@@ -41,7 +44,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+* ls = list contents of current directory  
+* ls -a = list hidden files
+* ls -l = list long form of files, including permissions, user, file size, and date last modified
+* ls -lh = long form but with file size in bytes, KB, MB, etc.
+* ls -lah = long form, includes hidden files, includes file size suffixes  
+* ls -t = lists files sorted by most recently modified
+* ls -Glp = long form, the 'p' inserts a slash after directory names, and the 'G' tells it not to print group names
 
 ---
 
