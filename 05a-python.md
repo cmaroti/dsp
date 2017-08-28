@@ -29,24 +29,24 @@ How are Python lists and sets similar and different? Give examples of using both
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
 >> The lambda function is an anonymous function, and is defined without a name. The syntax of a lambda function is "lambda arguments: expression." For example, the lines
->> ```python
+```python
 squared = lambda x: x**2
 print(squared(5))
 ```
->> would print 25.
+would print 25.
 Lambda functions are used when you only need a quick function for a short time. They can be used as arguments in other functions. For example, a lambda function can be used as an argument to the ```map()``` function, which takes in a function and a list, and applies the function to each item in the list. The following code maps every number in the list to its square, and prints ```[1,4,9,16,25,36]```.
->> ```python
+```python
 oldlist = [1,2,3,4,5,6]
 newlist = list(map(lambda x: x**2, oldlist))
 print(newlist)
 ```
->> As the key argument to the ```sorted()``` function, ```sorted()``` will sort a list by the values returned by the key. Here is an example:
->> ```python
+As the key argument to the ```sorted()``` function, ```sorted()``` will sort a list by the values returned by the key. Here is an example:
+```python
 mylist = [(1,10,12),(7,5,3),(3,8,20),(8,6,4)]
 newlist = sorted(mylist, key=lambda x: x[1])
 print(newlist)
 ```
->> The above would print ```[(7,5,3),(8,6,4),(3,8,20),(1,10,12)]``` because the key tells it to sort by the second value of each item in the list.
+The above would print ```[(7,5,3),(8,6,4),(3,8,20),(1,10,12)]``` because the key tells it to sort by the second value of each item in the list.
 
 ---
 
