@@ -18,7 +18,9 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    if count >= 10:
+        count = "many"
+    return "Number of donuts: "+str(count)
 
 
 def both_ends(s):
@@ -37,7 +39,9 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    if len(s) < 2:
+        return ""
+    return s[0:2]+s[-2:]
 
 
 def fix_start(s):
@@ -56,7 +60,13 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    new_s = s[0]
+    for i in range(1,len(s)):
+        if s[i] == s[0]:
+            new_s += "*"
+        else:
+            new_s += s[i]
+    return new_s
 
 
 def mix_up(a, b):
@@ -74,7 +84,7 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    return b[0:2]+a[2:]+" "+a[0:2]+b[2:]
 
 
 def verbing(s):
@@ -91,7 +101,12 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    if len(s) < 3:
+        return s
+    elif s[-3:] =="ing":
+        return s+"ly"
+    else:
+        return s+"ing"
 
 
 def not_bad(s):
@@ -111,8 +126,19 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
-
+    for i in range(len(s)-2):
+        if s[i] == "n" and s[i+1] == "o" and s[i+2] == "t":
+            remembernot = i
+            for j in range(i+1, len(s)-2):
+                if s[j] == "b" and s[j+1] == "a" and s[j+2] == "d":
+                    rememberbad = j+2
+                    break
+            break
+    try:
+        return s[0:remembernot]+"good"+s[rememberbad+1:]
+    except:
+        return s
+                
 
 def front_back(a, b):
     """
@@ -130,4 +156,6 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    asplit = int(len(a)/2+.5)
+    bsplit = int(len(b)/2+.5)
+    return a[0:asplit]+b[0:bsplit]+a[asplit:]+b[bsplit:]
