@@ -54,7 +54,37 @@ print(newlist)
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehension is the ability in python to create and manipulate lists in a very intuitive way. It allows you to reduce the following code to a single line:
+```python
+squares = []
+for i in range(11):
+    squares.append(i**2)
+print(squares)
+# OR
+squares2 = [i**2 for i in range(11)]
+print(squares2)
+# both print [0,1,4,9,16,25,36,49,64,81,100]
+```
+>> The function `map()` applies a function to each item in a list and returns that list. The equivalent of the above using `map()` would be:
+```python
+squares3 = list(map(lambda x: x**2, list(range(11))))
+```
+>> Now, if I wanted a list of only the odd perfect squares, I could use the following list comprehension:
+```python
+oddsquares = [i for i in squares if (i % 2 == 1)]
+```
+>> The above can also be done using the `filter()` function, which creates a list of elements that satisfy a given function from another list. We can find the odd squares using `filter()`:
+```python
+oddsquares2 = list(filter(lambda x: (x % 2 == 1), squares))
+```
+>> Set comprehension works similarly; below we create a set of the odd squares:
+```python
+oddsquares3 = {i for i in squares if (i % 2 == 1)}
+```
+>> The biggest difference is that this set is unordered; when I print `oddsquares3` I get `{1,9,81,49,25}`. With dictionary comprehension, I can easily build a dictionary where the keys are the squares and the values are whether the squares are odd:
+```python
+squaresdict = {x: x % 2 == 1 for x in squares}
+```
 
 ---
 
