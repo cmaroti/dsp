@@ -1,4 +1,4 @@
-# Learn Python
+≈ß# Learn Python
 
 Read Allen Downey's [Think Python](http://www.greenteapress.com/thinkpython/) for getting up to speed with Python 2.7 and computer science topics. It's completely available online, or you can buy a physical copy if you would like.
 
