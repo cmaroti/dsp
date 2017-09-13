@@ -86,7 +86,15 @@ Bayes' Theorem is an important tool in understanding what we really know, given 
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Given that Elvis was a twin, and that he had a twin brother, the probability that Elvis was an identical twin is $\frac{5}{11}$. We can use the table method, where hypothesis $A$ is that Elvis was an identical twin and hypothesis $B$ is that Elvis was a non-identical twin (fraternal twin). 
+
+|      | Prior: $p(H)$   | Likelihood: $p(D|H)$ | $p(H)p(D|H)$    | Normalizing constant: $p(D)$         | Posterior: $p(H|D)$ |
+|:---: | :-------------: | :------------------: | :-------------: | :----------------------------------: | :-----------------: |
+| $A$  | $\frac{1}{300}$ | $\frac{1}{2}$        | $\frac{1}{600}$ | $\frac{11}{3000}$ | $\frac{\frac{1}{600}}{\frac{11}{3000}}=\frac{5}{11}$ |
+| $B$  | $\frac{1}{125}$ | $\frac{1}{4}$        | $\frac{1}{500}$ | $\frac{11}{3000}$ | $\frac{\frac{1}{500}}{\frac{11}{3000}}=\frac{6}{11}$ |
+
+>> The priors $p(H)$ are the probabilities stated in the problem. For hypothesis $A$, the likelihood $p(D|H)$ that Elvis was a twin brother given that he was an identical twin is $\frac{1}{2}$, assuming there is an equal chance of having a boy or girl. Then, $p(H)p(D|H)$ is $\frac{1}{300} \dot \frac{1}{2} = \frac{1}{600}$. For hypothesis $B$, the likelihood $p(D|H)$ that Elvis was a twin brother given that he was a fraternal twin is $\frac{1}{4}$, assuming sets of fraternal twins are boy/boy, girl/girl, boy/girl, and girl/boy. Then, $p(H)p(D|H)$ is $\frac{1}{125} \dot \frac{1}{4} = \frac{1}{500}$. The normalizing constant $p(D)$ is then $\frac{1}{600}+\frac{1}{500} = \frac{11}{3000}$. Finally, to get the posterior $p(H|D)$ for hypothesis $A$, we divide $p(H)p(D|H)$ by $p(D)$: $\frac{\frac{1}{600}}{\frac{11}{3000}}$, which reduces to $\frac{5}{11}$.
+
 
 ---
 
