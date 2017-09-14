@@ -91,9 +91,8 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 
 |   | Prior p(H) | Likelihood p(D&#124;H) | p(H)p(D&#124;H) | Normalizing constant p(D) | Posterior p(H&#124;D)   |
 |---|------------|-------------------|------------|---------------------------|--------------------|
-| A | 1/300      | 1/2               | 1/600      | 11/3000                   | 1/600/11/3000=5/11 |
-| B | 1/125      | 1/4               | 1/500      | 11/3000                   | 1/500/11/3000=6/11 |
-
+| A | 1/300      | 1/2               | 1/600      | 11/3000                   | (1/600)/(11/3000)=5/11 |
+| B | 1/125      | 1/4               | 1/500      | 11/3000                   | (1/500)/(11/3000)=6/11 |
 
 
 >> The priors *p(H)* are the probabilities stated in the problem. For hypothesis *A*, the likelihood *p(D|H)* that Elvis was a twin brother given that he was an identical twin is *1/2*, assuming there is an equal chance of having a boy or girl. Then, *p(H)p(D|H)* is *(1/300)(1/2) = 1/600*. For hypothesis *B*, the likelihood *p(D|H)* that Elvis was a twin brother given that he was a fraternal twin is *1/4*, assuming the sets of fraternal twins are boy/boy, girl/girl, boy/girl, and girl/boy. Then, *p(H)p(D|H)* is *(1/125)(1/4) = 1/500*. The normalizing constant *p(D)* is then *1/600+1/500 = 11/3000*. Finally, to get the posterior *p(H|D)* for hypothesis *A*, we divide *p(H)p(D|H)* by *p(D)*: *(1/600)/(11/3000)*, which reduces to *5/11*.
@@ -104,7 +103,7 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Frequentists believe that probabilities represent long-term frequencies of repeatable random events. They generally will not assign a probability to a hypothesis without sampling and running experiments. Bayesians, on the other hand, are more subjective and will use probabilities to model samples as well as other uncertainties. Bayesians are okay assigning a probability to a hypothesis based on prior knowledge, and will then use a combination of their prior beliefs and new data to update the probability.
 
 ---
 
