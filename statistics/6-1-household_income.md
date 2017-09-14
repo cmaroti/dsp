@@ -1,6 +1,6 @@
 [Think Stats Chapter 6 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2007.html#toc60) (household income)
 
->> The mean of the income data assuming an upper bound of $1 million is around $74,000, while the median is around $51,000. The fact that the mean is greater than the median suggests a right-skewed distribution. The calculations of skewness are both positive and therefore also indicate right-skewness. The skewness is 4.95 and the Pearson's skewness is 0.74. 
+>> The mean of the income data assuming an upper bound of $1 million is around $74,000, while the median is around $51,000. Around 66% of households report a taxable income below the mean. The fact that the mean is greater than the median suggests a right-skewed distribution. The calculations of skewness are both positive and therefore also indicate right-skewness. The skewness is 4.95 and the Pearson's skewness is 0.74. 
 
 >> The skew changes depending on our assumption for the upper bound. If we change the upper bound to $10 million, the magnitude of the skewness increases. The median stays the same, but the mean goes up to around $124,000. 
 
@@ -16,7 +16,7 @@ The dataset is in the form of a series of income ranges and the number of respon
 
 To estimate mean and other statistics from these data, we have to make some assumptions about the lower and upper bounds, and how the values are distributed in each range. `hinc2.py` provides `InterpolateSample`, which shows one way to model this data. It takes a `DataFrame` with a column, `income`, that contains the upper bound of each range, and `freq`, which contains the number of respondents in each frame.
 
-It also takes `log_upper`, which is an assumed upper bound on the highest range, expressed in `log10` dollars. The default value, `log_upper=6.0` represents the assumption that the largest income among the respondents is $10^6$, or one million dollars.
+It also takes `log_upper`, which is an assumed upper bound on the highest range, expressed in `log10` dollars. The default value, `log_upper=6.0` represents the assumption that the largest income among the respondents is 10^6, or one million dollars.
 
 `InterpolateSample` generates a pseudo-sample; that is, a sample of household incomes that yields the same number of respondents in each range as the actual data. It assumes that incomes in each range are equally spaced on a `log10` scale.
 
