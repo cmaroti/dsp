@@ -89,19 +89,16 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 >> Given that Elvis was a twin, and that he had a twin brother, the probability that Elvis was an identical twin is 5/11. We can use the table method, where hypothesis *A* is that Elvis was an identical twin and hypothesis *B* is that Elvis was a non-identical twin (fraternal twin).
  
 
-|     | Prior: *p(H)* | Likelihood: *p(D|H)* | *p(H)p(D|H)* | Normalizing constant: *p(D)* | Posterior: *p(H|D)*  |
-
-|-----|---------------|----------------------|-------------|------------------------------|----------------------|
-
-| *A* | *1/300*       | *1/2*                | *1/600*     | *11/3000*                    | *1/600/11/3000=5/11* |
-
-| *B* | *1/125*       | *1/4*                | *1/500*     | *11/3000*                    | *1/500/11/3000=6/11* |
+|   | Prior p(H) | Likelihood p(D|H) | p(H)p(D|H) | Normalizing constant p(D) | Posterior p(H|D)   |
+|---|------------|-------------------|------------|---------------------------|--------------------|
+| A | 1/300      | 1/2               | 1/600      | 11/3000                   | 1/600/11/3000=5/11 |
+| B | 1/125      | 1/4               | 1/500      | 11/3000                   | 1/500/11/3000=6/11 |
 
 
 >> The priors *p(H)* are the probabilities stated in the problem. For hypothesis *A*, the likelihood *p(D|H)* that Elvis was a twin brother given that he was an identical twin is *1/2*, assuming there is an equal chance of having a boy or girl. Then, *p(H)p(D|H)* is *(1/300)(1/2) = 1/600*. For hypothesis *B*, the likelihood *p(D|H)* that Elvis was a twin brother given that he was a fraternal twin is *1/4*, assuming the sets of fraternal twins are boy/boy, girl/girl, boy/girl, and girl/boy. Then, *p(H)p(D|H)* is *(1/125)(1/4) = 1/500*. The normalizing constant *p(D)* is then *1/600+1/500 = 11/3000*. Finally, to get the posterior *p(H|D)* for hypothesis *A*, we divide *p(H)p(D|H)* by *p(D)*: *(1/600)/(11/3000)*, which reduces to *5/11*.
 
 
-|   |Prior: *p(H)* | Likelihood: *p(D|H)*    |  *p(H)p(D|H)* |  Normalizing constant: *p(D)* |  Posterior: *p(H|D)*  |  
+|   |terminal editor | open a file    |  edit a file |  save a file       |  exit a file   |  
 |---|----------------|----------------|--------------|--------------------|----------------|
 | 1 | nano           | nano filen.py  | [just type]  | ctrl + o, enter    | ctrl + x       |
 | 2 | vim, vi        | vim filen.py   | [just type]  | esc :w, enter      | esc :q, enter  |
