@@ -95,7 +95,7 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 | B | 1/125      | 1/4               | 1/500      | 11/3000                   | 1/500/11/3000=6/11 |
 
 
-|   |terminal editor | open a file    |  edit a file |  save a file       |  exit a file   |  
+|   | Prior | open a file    |  edit a file |  save a file       |  exit a file   |  
 |---|----------------|----------------|--------------|--------------------|----------------|
 | 1 | nano           | nano filen.py  | [just type]  | ctrl + o, enter    | ctrl + x       |
 | 2 | vim, vi        | vim filen.py   | [just type]  | esc :w, enter      | esc :q, enter  |
